@@ -944,11 +944,24 @@ int main(){
     int index;
     int mynum;
 
-    std::cout<<"enter element to search for\n";
+    std::cout<<"enter element to search for:";
     std::cin>>mynum;
     index = searchARray(numbers,size,mynum);
+
+    if (index != -1){
+        std::cout<<mynum<<" is at index "<<index;
+    }
+    else{
+        std::cout<<mynum<<" is not in the array";
+    }
+
     return 0;
 }
 int searchARray(int array[],int size,int element){
-
+    for (int i= 0; i<size;i++){
+        if (array[i]== element){
+            return i;
+        }
+    }
+    return -1;
 }
