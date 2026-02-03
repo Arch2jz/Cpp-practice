@@ -933,3 +933,22 @@
 //     }
 //     return total;
 // }
+//----------------------------------------------------------------------------------------------------------------------------------------search an array for an element--------------------------------------------------------------------------------------------------
+#include <iostream>
+int searchARray(int array[],int size,int element);
+
+int main(){
+
+    int numbers[]={1,2,3,4,5,6,7,8,9,10};
+    int size = sizeof(numbers)/sizeof(numbers[0]);
+    int index;
+    int mynum;
+
+    std::cout<<"enter element to search for\n";
+    std::cin>>mynum;
+    index = searchARray(numbers,size,mynum);
+    return 0;
+}
+int searchARray(int array[],int size,int element){
+
+}
