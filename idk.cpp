@@ -897,19 +897,39 @@
 //     return 0;
 // }
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------foreach loop---------------------------------------------------------------------------------------------------------
-#include <iostream>
-int main(){
+// //--------------------------------------------------------------------------------------------------------------------------------------------------------------foreach loop---------------------------------------------------------------------------------------------------------
+// #include <iostream>
+// int main(){
 
-    // std::string students []= {"Gurnoor","Bro", "Goku","Denji", "Chainsaw man","Asa"};
-    // for (std::string student : students){
-    //     std::cout<<student <<'\n';
-    // }
-    char grades []= {'A','B','C','D','E','F'};
-    for (char grade : grades){
-        std::cout<<grade<<'\n';
+//     // std::string students []= {"Gurnoor","Bro", "Goku","Denji", "Chainsaw man","Asa"};
+//     // for (std::string student : students){
+//     //     std::cout<<student <<'\n';
+//     // }
+//     char grades []= {'A','B','C','D','E','F'};
+//     for (char grade : grades){
+//         std::cout<<grade<<'\n';
 
-    }
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+// //----------------------------------------------------------------------------------------------------------------------------------------------------------------- Pass an Array to a function--------------------------------------------------------------------------------------------------------
+// #include <iostream>
+// double getTotal(double prices[],int size);
+// int main (){
+
+//     double prices []= {54.34,15.03, 40.44, 65, 42.06};
+//     int size =sizeof(prices)/sizeof(prices[0]);
+//     double total = getTotal(prices,size);
+
+//     std::cout<<"$"<<total;
+//     return 0;
+// }
+// double getTotal(double prices[],int size){
+//     double total = 0;
+//     for (int i= 0; i < size;i++){
+//         total += prices[i];
+//     }
+//     return total;
+// }
